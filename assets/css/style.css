@@ -1,0 +1,174 @@
+body{
+    background: url(../images/pink\ dust.png);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;;
+    grid-template-rows: 18vh 82vh;
+  }
+#navbar{
+    grid-area: 1 / 1 / 2/ 4;
+    /* position: fixed; Why does this break it??? */
+    background: rgba(44, 165, 141, .3);
+    margin-bottom: 0;
+    /* box-shadow: 1px 1px 1px #030303; */
+}
+#name{
+    letter-spacing: .5em;
+    margin-left:  5%;
+    margin-top: 3vh;
+    font-size: 47px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#inline-menu{
+    display: inline;
+    position: absolute;
+    top: 5.5vh;
+    right: 30px;
+} 
+#inline-menu li{
+    display: inline;
+    margin-right: 17px;
+    font-size: 20px;
+    }
+/*---------- hover animation------------------ */
+#inline-menu li a,
+#inline-menu li a:after,
+#inline-menu li a:before {
+    transition: all .4s;
+}
+#inline-menu li a:hover {
+    color: pink;
+    }
+#inline-menu li a {
+position: relative;
+}
+#inline-menu li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #aaa;
+height: 2px;
+}
+#inline-menu li a:hover:after {
+width: 100%;
+}
+ /*-------------------------------------------  */
+
+#dropdown-icon{
+    display: none;
+
+}
+#dropdown-container{
+    display: none;
+    grid-area: 2 / 1 / 3/ 4;
+    margin-top: 0;
+    position: relative;
+    
+}
+#dropdown-menu{
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 0; 
+}
+#dropdown-menu li{
+    list-style-type: none;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    background: rgba(255, 186, 68, .3);
+}
+#main{
+    grid-area:2 / 1 / 3 / 4;
+}
+#me-pic{
+    width:30%;
+    position:relative;
+    margin: 50px 50px 20px 45px;
+    float: left;
+}
+#bio{
+    margin: 15px 0px 0 15px;
+    padding: 10px 0px 0 30px ;
+    text-align: justify;
+    font-size: 1.4em
+}
+
+
+@media only screen and (max-width: 880px) {
+    .container {
+        grid-template-rows: 12vh 88vh;
+      }
+
+    #inline-menu{
+        top: 80px;
+        right: auto;
+        left: 2%;
+        
+    }
+    #inline-menu li{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        grid-template-rows: 12vh 88vh;
+      }
+    #name{
+        letter-spacing: .5em;
+        margin-left:  10%;
+        margin-top: 30px;
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+    #inline-menu{
+        visibility: hidden;
+    }
+    #me-pic{
+        width: 80%;
+        margin-right: 0;
+        margin-left: 10%;
+        margin-bottom: 10px;
+    }
+    #bio{
+        width: 80%;
+        margin-left: 10%;
+        padding-left: 0;
+    }
+    #dropdown-icon{
+        display: inline-block;
+        position: absolute;
+        top: 42px;
+        right: 40px;
+        font-size: 20px;
+        
+    }
+   
+}
+@media only screen and (max-width: 410px) {
+    #name{
+        font-size: 25px;
+        margin-top: 35px;
+    }
+    #dropdown-icon{
+        right: 30px;
+    }
+}
+@media only screen and (max-width: 335px) {
+    #name{
+        margin-left: 4%;
+    }
+}
