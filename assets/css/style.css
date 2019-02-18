@@ -20,7 +20,6 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 1 / 1 / 2/ 4;
-  /* position: fixed; Why does this break it??? */
   background: #2CA58D;
   margin-bottom: 0;
   -webkit-box-shadow: 5px 5px 15px black;
@@ -144,6 +143,12 @@ a {
   padding-left: 10vw;
 }
 
+#portfolio-area2 {
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 10vw;
+}
+
 .portfolio-img-div {
   width: 20vw;
   height: 32vw;
@@ -162,8 +167,9 @@ a {
 
 .portfolio-img-div .caption {
   background-color: #F3415A;
-  padding: 5px;
-  font-size: 1.2em;
+  padding: 3px;
+  margin-top: -7px;
+  font-size: 1.5vw;
 }
 
 .portfolio-img-div:hover {
@@ -184,12 +190,12 @@ a {
 
 .flip-container, .front, .back {
   width: 20vw;
-  height: 32vw;
+  height: 28vw;
 }
 
 .back {
   background-color: #2CA58D;
-  color: black;
+  color: #FFBA44;
 }
 
 /* flip speed goes here */
@@ -210,7 +216,6 @@ a {
   left: 0;
 }
 
-/* front pane, placed above back */
 .front {
   z-index: 2;
   /* for firefox 31 */
@@ -218,9 +223,25 @@ a {
           transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+  color: black;
+}
+
+.back-content {
+  margin-top: 1vh;
+}
+
+.back-content .description {
+  text-align: justify;
+  font-size: 1vw;
+  margin: 15px 15px 0 15px;
+  font-size: 1.2vw;
+}
+
+.back-content span {
+  font-size: 2vw;
+  color: #F3415A;
 }
 /*# sourceMappingURL=style.css.map */
