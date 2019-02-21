@@ -134,7 +134,7 @@ a {
   margin: 15px 0px 0 15px;
   padding: 10px 0px 0 30px;
   text-align: justify;
-  font-size: 1.7em;
+  font-size: 2.7vw;
 }
 
 #portfolio-area {
@@ -251,7 +251,7 @@ a {
 
 #links {
   text-align: center;
-  margin-top: 12vh;
+  margin-top: 1vh;
 }
 
 #links #topLinkRow div {
@@ -279,5 +279,92 @@ a {
 
 #links #bottomLinks #email {
   margin: 5vh auto;
+}
+
+@media only screen and (max-width: 880px) {
+  .container {
+    -ms-grid-rows: 12vh 88vh;
+        grid-template-rows: 12vh 88vh;
+  }
+  .container #navbar #name {
+    margin-top: 2vh;
+    font-size: 37px;
+  }
+  .container #navbar #dropdown-icon {
+    display: inline;
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+  }
+  .container #navbar ul {
+    display: none;
+  }
+  #inline-menu {
+    top: 80px;
+    right: auto;
+    left: 2%;
+  }
+  #inline-menu li {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    -ms-grid-rows: 12vh 88vh;
+        grid-template-rows: 12vh 88vh;
+  }
+  #name {
+    letter-spacing: 0.5em;
+    margin-left: 10%;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    font-size: 30px;
+  }
+  #inline-menu {
+    visibility: hidden;
+  }
+  #me-pic {
+    width: 80%;
+    margin-right: 0;
+    margin-left: 10%;
+    margin-bottom: 10px;
+  }
+  #bio {
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 0;
+    font-size: 3.7vw;
+    margin-bottom: 10vh;
+  }
+  #dropdown-icon {
+    display: inline-block;
+    position: absolute;
+    top: 42px;
+    right: 40px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  #navbar #name {
+    font-size: 25px;
+    margin-top: 35px;
+    letter-spacing: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  #name {
+    margin-left: 4%;
+  }
+}
+
+@media only screen and (max-width: 346px) {
+  #navbar #name {
+    font-size: 25px;
+    margin-top: 35px;
+    letter-spacing: 0.2em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
