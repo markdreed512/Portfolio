@@ -1,7 +1,7 @@
 body {
   background-image: url("../images/pink dust.png");
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
@@ -20,14 +20,14 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 1 / 1 / 2/ 4;
-  background: #2CA58D;
+  background: #2ca58d;
   margin-bottom: 0;
   -webkit-box-shadow: 5px 5px 15px black;
           box-shadow: 5px 5px 15px black;
 }
 
 #navbar #name {
-  letter-spacing: .5em;
+  letter-spacing: 0.5em;
   margin-left: 5%;
   margin-top: 3vh;
   font-size: 47px;
@@ -59,12 +59,12 @@ a {
 #inline-menu li a,
 #inline-menu li a:after,
 #inline-menu li a:before {
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #inline-menu li a:hover {
-  color: #F3415A;
+  color: #f3415a;
 }
 
 #inline-menu li a {
@@ -78,9 +78,9 @@ a {
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: ".";
   color: transparent;
-  background: #F3415A;
+  background: #f3415a;
   height: 2px;
 }
 
@@ -166,14 +166,14 @@ a {
 }
 
 .portfolio-img-div .caption {
-  background-color: #F3415A;
+  background-color: #f3415a;
   padding: 3px;
   margin-top: -7px;
   font-size: 1.5vw;
 }
 
 .portfolio-img-div:hover {
-  color: #2CA58D;
+  color: #2ca58d;
 }
 
 /* entire container, keeps perspective */
@@ -183,19 +183,22 @@ a {
 }
 
 /* flip the pane when hovered */
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
+.flip-container,
+.front,
+.back {
   width: 20vw;
   height: 28vw;
 }
 
 .back {
-  background-color: #2CA58D;
-  color: #FFBA44;
+  background-color: #2ca58d;
+  color: #ffba44;
 }
 
 /* flip speed goes here */
@@ -208,7 +211,8 @@ a {
 }
 
 /* hide back of pane during swap */
-.front, .back {
+.front,
+.back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
@@ -242,6 +246,38 @@ a {
 
 .back-content span {
   font-size: 2vw;
-  color: #F3415A;
+  color: #f3415a;
+}
+
+#links {
+  text-align: center;
+  margin-top: 12vh;
+}
+
+#links #topLinkRow div {
+  display: inline;
+}
+
+#links #topLinkRow .fab {
+  margin: 3vw;
+}
+
+#links #topLinkRow #github .fa-github {
+  font-size: 70px;
+  color: #ffba44;
+  margin-top: 50px;
+}
+
+#links #topLinkRow #linkedIn .fa-linkedin {
+  font-size: 70px;
+  color: #ffba44;
+}
+
+#links #bottomLinks {
+  font-size: 30px;
+}
+
+#links #bottomLinks #email {
+  margin: 5vh auto;
 }
 /*# sourceMappingURL=style.css.map */
