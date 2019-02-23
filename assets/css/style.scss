@@ -10,7 +10,9 @@ $colors: (
 }
 
 body {
-  background-image: url("../images/pink\ dust.png");
+  // background-image: url("../images/pink\ dust.png");
+  // background-color: #b63042;
+  background-color: rgb(94, 90, 90);
   color: white;
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -29,6 +31,7 @@ body {
   margin-bottom: 0;
   box-shadow: 5px 5px 15px black;
   #name {
+    color: black;
     letter-spacing: 0.5em;
     margin-left: 5%;
     margin-top: 3vh;
@@ -84,6 +87,33 @@ a {
 #inline-menu li a:hover:after {
   width: 100%;
 }
+//-------
+#dropdown-menu li a,
+#dropdown-menu li a:after,
+#dropdown-menu li a:before {
+  transition: all 0.4s;
+}
+#dropdown-menu li a:hover {
+  color: color(accent);
+}
+#dropdown-menu li a {
+  position: relative;
+}
+#dropdown-menu li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: color(accent);
+  height: 2px;
+}
+#dropdown-menu li a:hover:after {
+  width: 100%;
+}
 //end hover animation-------------------------------------------|
 
 // dropdown menu ---------------------------------------------->
@@ -103,7 +133,7 @@ a {
       width: 100%;
       padding-top: 11px;
       padding-bottom: 10px;
-      background: rgba(255, 186, 68, 0.3);
+      background: black;
     }
   }
 }
@@ -122,10 +152,11 @@ a {
 }
 #bio {
   width: 90%;
-  margin: 15px 0px 0 15px;
+  margin: 15px 0px 100px 15px;
   padding: 10px 0px 0 30px;
   text-align: justify;
-  font-size: 2.7vw;
+  font-size: 2vw;
+  color: rgb(248, 242, 242);
 }
 
 //end main content about page-----------------------------------|
@@ -228,7 +259,7 @@ a {
   }
 }
 
-//main about content------------------------------->
+//main contact content------------------------------->
 
 #links {
   text-align: center;
@@ -259,6 +290,27 @@ a {
     #email {
       margin: 5vh auto;
     }
+    #phone {
+      margin: 5vh auto;
+    }
+    #resume {
+      margin: 5vh auto;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+  color: black;
+  background-color: color(primary);
+  // border-top: 2px solid black;
+  p {
+    padding-top: 0px;
+    margin-top: 10px;
+    text-align: center;
   }
 }
 

@@ -1,114 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div id="navbar">
-            <div id="name">mark reed</div>
-            <ul id="inline-menu">
-                <li><a href="index.html">about</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+      <div id="navbar">
+        <div id="name">mark reed</div>
+        <ul id="inline-menu">
+          <li class="active"><a href="index.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
 
-            <i class="fas fa-bars" id="dropdown-icon"></i>
-        </div>
-        <div id="dropdown-container">
-            <ul id="dropdown-menu">
-                <li><a href="index.html">about</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </div>
+        <i class="fas fa-bars" id="dropdown-icon"></i>
+      </div>
+      <div id="dropdown-container">
+        <ul id="dropdown-menu">
+          <li><a href="index.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
 
-        <div id="main">
-            <div id="portfolio-area">
-                <div class="portfolio-img-div flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="assets/images/wait_it_out.png" class="portfolio-img" alt="Wait It Out app">
-                            <div class="caption">
-                                <p>Wait It Out mobile<br> web app</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                            <div class="back-content">
-                                <div class="description">Wait It Out gives drivers the ability to opt out of traffic by giving them turn-by-turn directions to the closest venue for "waiting it out." </div>
-                                <span>Created with:</span>
-                                <div>HTML5/CSS3</div>
-                                <div>JS/JQuery</div>
-                                <div>SASS CSS Framework</div>
-                                <div>Google API</div>
-                                <h3>Check it out <a href="https://mpartee123.github.io/Project-1/"target="_blank" rel="noopener noreferrer">here</a></h3>
-                            </div>
-
-                        </div>
-                    </div>
+      <div id="main">
+        <div id="portfolio-area">
+          <div
+            class="portfolio-img-div flip-container"
+            ontouchstart="this.classList.toggle('hover');"
+          >
+            <div class="flipper">
+              <div class="front">
+                <img
+                  src="assets/images/wait_it_out.png"
+                  class="portfolio-img"
+                  alt="Wait It Out app"
+                />
+                <div class="caption">
+                  <p>
+                    Wait It Out mobile<br />
+                    web app
+                  </p>
                 </div>
-                <div class="portfolio-img-div flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="assets/images/gifgen.png" class="portfolio-img" alt="Wait It Out app">
-                            <div class="caption">
-                                <p>Gif Generator<br>app</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                                <div class="back-content">
-                                        <div class="description">Uses local storage for users to create a personal library of favorite Gif categories.  </div>
-                                        <span>Created with:</span>
-                                        <div>HTML5/CSS3</div>
-                                        <div>JS/JQuery</div>
-                                        <div>Bootstrap</div>
-                                        <div>Giphy API</div>
-                                        <h3>Check it out <a href="https://markdreed512.github.io/giphy/"target="_blank" rel="noopener noreferrer">here</a></h3>
-                                    </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <div class="description">
+                    Wait It Out gives drivers the ability to opt out of traffic
+                    by giving them turn-by-turn directions to the closest venue
+                    for "waiting it out."
+                  </div>
+                  <span>Created with:</span>
+                  <div>HTML5/CSS3</div>
+                  <div>JS/JQuery</div>
+                  <div>SASS CSS Framework</div>
+                  <div>Google API</div>
+                  <h3>
+                    Check it out
+                    <a
+                      href="https://markdreed512.github.io/Wait-It-Out/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >here</a
+                    >
+                    <h3>Or on <a href="#"> Github</a></h3>
+                  </h3>
                 </div>
-                <div class="portfolio-img-div flip-container" ontouchstart="this.classList.toggle('hover');">
-                    <div class="flipper">
-                        <div class="front">
-                            <img src="assets/images/train_scheduler.png" class="portfolio-img" alt="Train Scheduler app">
-                            <div class="caption">
-                                <p>Train Scheduler<br>web app</p>
-                            </div>
-                        </div>
-                        <div class="back">
-                                <div class="back-content">
-                                        <div class="description">Users can generate and store train info to a database  for a local train system schedule. </div>
-                                        <span>Created with:</span>
-                                        <div>HTML5/CSS3</div>
-                                        <div>JS/JQuery</div>
-                                        <div>Google Firebase</div>
-                                        <div>Bootstrap</div>
-                                        <h3>Check it out <a href="https://markdreed512.github.io/train-scheduler/" target="_blank" rel="noopener noreferrer">here</a></h3>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            
+          </div>
+          <div
+            class="portfolio-img-div flip-container"
+            ontouchstart="this.classList.toggle('hover');"
+          >
+            <div class="flipper">
+              <div class="front">
+                <img
+                  src="assets/images/gifgen.png"
+                  class="portfolio-img"
+                  alt="Wait It Out app"
+                />
+                <div class="caption">
+                  <p>Gif Generator<br />app</p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <div class="description">
+                    Uses local storage for users to create a personal library of
+                    favorite Gif categories.
+                  </div>
+                  <span>Created with:</span>
+                  <div>HTML5/CSS3</div>
+                  <div>JS/JQuery</div>
+                  <div>Bootstrap</div>
+                  <div>Giphy API</div>
+                  <h3>
+                    Check it out
+                    <a
+                      href="https://markdreed512.github.io/GifGen/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >here</a
+                    >
+                    <h3>Or on <a href=""> Github</a></h3>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="portfolio-img-div flip-container"
+            ontouchstart="this.classList.toggle('hover');"
+          >
+            <div class="flipper">
+              <div class="front">
+                <img
+                  src="assets/images/train_scheduler.png"
+                  class="portfolio-img"
+                  alt="Train Scheduler app"
+                />
+                <div class="caption">
+                  <p>Train Scheduler<br />web app</p>
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-content">
+                  <div class="description">
+                    Users can generate and store train info to a database for a
+                    local train system schedule.
+                  </div>
+                  <span>Created with:</span>
+                  <div>HTML5/CSS3</div>
+                  <div>JS/JQuery</div>
+                  <div>Google Firebase</div>
+                  <div>Bootstrap</div>
+                  <h3>
+                    Check it out
+                    <a
+                      href="https://markdreed512.github.io/train-scheduler/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >here</a
+                    >
+                  </h3>
+                  <h3>Or on <a href=""> Github</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/javascript/main.js"></script>
-</body>
-
+  </body>
 </html>
