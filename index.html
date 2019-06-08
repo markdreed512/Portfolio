@@ -1,76 +1,250 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head>
+	<title>Mark Reed</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/noscript.css" />
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-    <title>About</title>
-  </head>
+</head>
 
-  <body>
-    <div class="container">
-      <div id="navbar">
-        <div id="name">mark reed</div>
-        <ul id="inline-menu">
-          <li><a href="index.html">about</a></li>
-          <li><a href="portfolio.html">portfolio</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="inner">
+				<!-- <a href="index.html" class="logo">
+									<span class="symbol"><img src="https://picsum.photos/200" alt="" /></span>
+								</a> -->
 
-        <i class="fas fa-bars" id="dropdown-icon"></i>
-      </div>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-      <div id="main">
-        <div id="dropdown-container">
-          <ul id="dropdown-menu">
-            <li><a href="index.html">about</a></li>
-            <li><a href="portfolio.html">portfolio</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </div>
-        <img src="assets/images/me.jpg" alt="mark reed" id="me-pic" />
+			</div>
+		</header>
 
-        <div id="bio">
-          <p>
-            I am a web developer, professional educator, and lifelong learner
-            with a keen eye for design and a knack for collaboration. After 10
-            years as an Austin public school teacher, I am ready to take those
-            teaching, communication and collaboration skills and apply them to
-            the web development world.
-          </p>
-          <p>
-            I'm the kind of guy people seek out to solve problems at the last
-            minute. I keep my head and know how to prioritize under pressure. In
-            situations where most people would see chaos, I see opportunity and
-            say "challenge accepted".
-          </p>
-          <p>
-            I'm the guy you want on your team. Either as a leader, or simply a
-            worker among workers who is happy contributing to a collaborative
-            creation.
-          </p>
-        </div>
-      </div>
-    </div>
-  
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/javascript/main.js"></script>
-  </body>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Ipsum veroeros</a></li>
+				<li><a href="generic.html">Tempus etiam</a></li>
+				<li><a href="generic.html">Consequat dolor</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<header>
+					<div id="name">
+						<img src="https://picsum.photos/200" alt="" />
+						<h1>mark reed</h1>
+						<h3>web developer</h3>
+					</div>
+					<p>I am a full-stack developer who is passionate about learning new things, problem-solving and critical thinking. Effective communication and team collaboration are priorities. I seek out challenges and ways to be creative, and keep calm and focused under pressure.</p>
+					
+				</header>
+				<section class="tiles">
+					<!-- 868 X 790 -->
+					<article class="style1">
+						<span class="image">
+							<img src="./images/burger-bytes4.PNG" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Burger Bytes</h2>
+							<div class="content">
+								<p>Oregon Trail-style restaurant simulator.</p>
+								<p>Built with React/Redux, NodeJS, Express, MongoDB.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style2">
+						<span class="image">
+							<img src="images/click-a-bill.PNG" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Burger Time</h2>
+							<div class="content">
+								<p>Burger Wishlist and Tracker</p>
+								<p>Built with NodeJS, Express, MySql. </p>
+							</div>
+						</a>
+					</article>
+					<article class="style3">
+						<span class="image">
+							<img src="images/burger2.png" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Feugiat</h2>
+							<div class="content">
+								<p>GIF GENERATOR: USES LOCAL STORAGE FOR USERS TO CREATE A PERSONAL LIBRARY OF FAVORITE GIF CATEGORIES.
+										JQUERY, BOOTSTRAP, GIPHY API</p>
+							</div>
+						</a>
+					</article>
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic04.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Tempus</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style5">
+						<span class="image">
+							<img src="images/pic05.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Aliquam</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style6">
+						<span class="image">
+							<img src="images/pic06.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Veroeros</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style2">
+						<span class="image">
+							<img src="images/pic07.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Ipsum</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style3">
+						<span class="image">
+							<img src="images/pic08.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Dolor</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style1">
+						<span class="image">
+							<img src="images/pic09.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Nullam</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style5">
+						<span class="image">
+							<img src="images/pic10.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Ultricies</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style6">
+						<span class="image">
+							<img src="images/pic11.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Dictum</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic12.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Pretium</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+				</section>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+						<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+						<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
