@@ -2668,7 +2668,12 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: #fdfdfc !important;
+					text-shadow:
+					-1px -1px 0 #000,  
+					 1px -1px 0 #000,
+					 -1px 1px 0 #000,
+					  1px 1px 0 #000;
 				}
 
 				.tiles article > a h2 {
