@@ -2666,7 +2666,9 @@ input, select, textarea {
 				.tiles article > a > :last-child {
 					margin: 0;
 				}
-
+				.tiles article h2{
+					font-size: 2vw;
+				}
 				.tiles article > a:hover {
 					color: #fdfdfc !important;
 					text-shadow:
