@@ -2297,6 +2297,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		max-height: 300px;
 	}
 
 		.image img {
